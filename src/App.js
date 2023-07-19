@@ -31,16 +31,16 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="outside container mx-auto">
       <div className="container max-w-xl mt-40">
-        <div className="rounded-xl border-slate-300 border-2 p-10 shadow-sm bg-slate-100 text-white tracking-wider">
+        <div className="rounded-xl border-neutral-200 border-2 p-10 shadow-sm  text-white tracking-wider">
           <Search
             onChange={handleChange}
             searchValue={searchValue}
             onSubmit={fetchDictionary}
           />
         </div>
-        <div className="rounded-xl border-slate-300 border-2 p-10 shadow-sm bg-slate-100 text-black tracking-wider">
+        <div className="rounded-xl border-neutral-200 bg-neutral-50 border-2 p-10 shadow-sm text-black tracking-wider">
           <Results definition={definition} />
         </div>
       </div>

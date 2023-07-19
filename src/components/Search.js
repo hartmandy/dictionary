@@ -16,7 +16,7 @@ export default function SearchForm({ onSubmit, onChange, searchValue }) {
         type="search"
         name="searchValue"
         placeholder="Search a word"
-        className="flex-grow px-4 py-2 mr-2 border-2 border-slate-100 rounded-lg focus:outline-none text-black"
+        className="flex-grow px-4 py-2 mr-2 border-2 rounded-lg focus:outline-none text-black"
         onChange={onChange}
         value={searchValue}
       />
