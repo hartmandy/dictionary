@@ -48,23 +48,28 @@ function App() {
   };
 
   return (
-    <div className="outside container mx-auto">
-      <div className="container max-w-3xl mt-40">
-        <div className="rounded-xl border-neutral-200 border-2 p-10 shadow-sm  text-white tracking-wider">
-          <Search
-            onChange={handleChange}
-            searchValue={searchValue}
-            onSubmit={submit}
-          />
+    <div>
+      <div className="outside container mx-auto">
+        <div className="container max-w-3xl mt-20">
+          <div className="rounded-xl border-neutral-200 border-2 p-10 shadow-sm  text-white tracking-wider">
+            <Search
+              onChange={handleChange}
+              searchValue={searchValue}
+              onSubmit={submit}
+            />
+          </div>
+          <div className="results mt-4">
+            <Results definition={definition} results={definition} />
+          </div>
+          <Photos photos={photos} />
         </div>
-        <div className="results mt-4">
-          <Results definition={definition} results={definition} />
-        </div>
-        <Photos photos={photos} />
       </div>
+      <footer className="text-xs font-mono text-center mt-4 mb-4">
+        <a href="https://github.com/hartmandy/dictionary">Open source code</a>{" "}
+        by Mandy Hartman
+      </footer>
     </div>
   );
 }
-// rounded-xl border-neutral-200 bg-neutral-50 border-2 p-10 shadow-sm text-black tracking-wider
 
 export default App;
