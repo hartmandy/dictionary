@@ -41,7 +41,7 @@ function App() {
           />
         </div>
         <div className="rounded-xl border-neutral-200 bg-neutral-50 border-2 p-10 shadow-sm text-black tracking-wider">
-          <Results definition={definition} />
+          <Results definition={definition} results={definition} />
         </div>
       </div>
     </div>
